@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #f8f1e5, #e8d8bd);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Heading */
+h1 {
+  color: #493326;
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(128, 91, 67, 0.15);
+}
+
+/* Counter Box */
+.counter {
+  font-family: Georgia, serif;
+  font-size: 65px;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 2px;
+  width: 250px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffdf8;
+  border: 2px solid #c6a15b;
+  border-radius: 12px;
+  color: #805b43;
+  box-shadow: 0 6px 20px rgba(128, 91, 67, 0.2);
+}
+
+/* Buttons Box */
+.buttons {
+  display: flex;
+  gap: 15px;
+  padding: 20px 25px;
+  background: #fffaf0;
+  border: 1px solid #d8c29a;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(73, 51, 38, 0.15);
+}
+
+/* Common Button */
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Minus */
+.minus {
+  background: #98634c;
+}
+
+/* Plus */
+.plus {
+  background: #b58a3c;
+}
+
+/* Reset */
+.reset {
+  background: #806b55;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.85;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(73, 51, 38, 0.2);
+}
+
+button:disabled {
+  background: #c5b8a5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Minimum Message */
+.container p {
+  color: #805b43;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
